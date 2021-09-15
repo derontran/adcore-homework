@@ -8,7 +8,7 @@ var TreeItem = require('@material-ui/lab/TreeItem');
 
 var root 
 (callBackendAPI = async () => {
-  const response = await fetch('/express_backend');
+  const response = await fetch('/get_tree');
   const body = await response.json();
 
   if (response.status !== 200) {
